@@ -281,6 +281,22 @@ h1 em {
 section {
   padding: 64px 0;
 }
+#tour {
+  text-align: center;
+  padding-bottom: 16px;
+}
+video.tour {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: var(--bg2);
+  box-shadow: var(--shadow);
+}
 h2 {
   font-size: clamp(26px, 3.6vw, 36px);
   margin: 0 0 8px;
