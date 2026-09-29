@@ -9,6 +9,12 @@ or make your own in the **Workshop**.
 [Report a bug](https://github.com/kehuydietlatoi/token-sidekick-releases/issues/new?template=bug.md) · [Suggest an idea](https://github.com/kehuydietlatoi/token-sidekick-releases/issues/new?template=idea.md) ·
 [Community](https://github.com/kehuydietlatoi/token-sidekick-releases/discussions)
 
+<p align="center">
+  <a href="https://kehuydietlatoi.github.io/token-sidekick-releases/#tour"><img src="https://kehuydietlatoi.github.io/token-sidekick-releases/img/demo-teaser.gif" width="720"
+    alt="Token's belly fills with Claude usage, it taps along while Claude works, todos drop items, and it dresses up" /></a>
+  <br /><sub><a href="https://kehuydietlatoi.github.io/token-sidekick-releases/#tour">Watch the full 1-minute tour</a></sub>
+</p>
+
 ## Installing
 
 1. Download `Token-Sidekick-Setup.exe` from the [latest release](https://github.com/kehuydietlatoi/token-sidekick-releases/releases/latest) and run it.
