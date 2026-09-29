@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy · Token Sidekick</title>
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrap page">
+      <p><a href="./">← Token Sidekick</a></p>
+      <h1>Privacy policy</h1>
+      <p class="fine">Applies to the public beta (0.2.0-beta.1).</p>
+
+      <h2>The short version</h2>
+      <p>
+        Token Sidekick runs on your computer. The beta has no accounts, no analytics and no telemetry, and it doesn't send
+        your data to us or anyone else.
+      </p>
+
+      <h2>What the app reads, locally</h2>
+      <ul>
+        <li>
+          <b>Claude Code:</b> when you click Connect, it adds a status line and hooks to
+          <code>~/.claude/settings.json</code> (after making a backup). These give it your usage percentages and reset
+          times, plus event names such as "a tool was used" and the tool's name. It never reads your prompts, Claude's
+          replies or your files.
+        </li>
+        <li>
+          <b>Codex CLI:</b> it reads the rate limits and activity events from Codex's own log files in
+          <code>~/.codex/sessions</code>. It only reads them and never changes Codex's settings.
+        </li>
+        <li>
+          <b>Your data</b> (todos, habits, items and Workshop creations) stays in <code>~/.claude-sidekick</code> on
+          your PC. A small log file there helps with bug reports and is only shared if you attach it yourself.
+        </li>
+      </ul>
+
+      <h2>What goes over the network</h2>
+      <ul>
+        <li>
+          <b>Update checks</b> to GitHub (<code>github.com</code>), which sees your IP address like any website. See
+          <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement"
+            >GitHub's privacy statement</a
+          >.
+        </li>
+        <li>
+          <b>Links you click</b>, such as "Report a bug", open in your browser. Bug reports are public GitHub issues and
+          include only what you see before posting.
+        </li>
+      </ul>
+
+      <h2>Later features</h2>
+      <p>
+        If we add optional accounts (the community gallery, or purchases), this page will be updated before they go
+        live, including what is stored and how to delete it.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Questions: open an issue at <a href="https://github.com/kehuydietlatoi/token-sidekick-releases/issues">https://github.com/kehuydietlatoi/token-sidekick-releases</a>.</p>
+    </main>
+  </body>
+</html>

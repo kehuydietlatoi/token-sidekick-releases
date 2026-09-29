@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Token Sidekick: a desktop pet that eats your tokens</title>
+    <meta
+      name="description"
+      content="Token is a cute desktop pet for Windows whose belly is your Claude Code usage meter. Todos and habits drop items, Codex gets a critter too, and you can design your own look. Free beta."
+    />
+    <meta property="og:title" content="Token Sidekick: a desktop pet that eats your tokens" />
+    <meta property="og:description" content="A desktop pet for Claude Code, Codex and more. Free beta for Windows." />
+    <meta property="og:image" content="https://kehuydietlatoi.github.io/token-sidekick-releases/img/pack-cafe.png" />
+    <link rel="icon" href="icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="#"><img src="icon.png" alt="" />Token Sidekick</a>
+        <div class="links">
+          <a href="#features">Features</a>
+          <a href="#install">Install</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <a class="btn primary small" href="https://github.com/kehuydietlatoi/token-sidekick-releases/releases/latest/download/Token-Sidekick-Setup.exe">Download</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="wrap">
+        <div>
+          <span class="badge">🫧 Free public beta · v0.2.0-beta.1</span>
+          <h1>A desktop pet that <em>eats your tokens</em>.</h1>
+          <p class="lead">
+            Meet <b>Token</b>, a round little blob that lives on your taskbar. Its belly fills up as you use Claude
+            Code: hyper when you're fresh, snoring when you've hit your limit. It even taps along while Claude works.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="https://github.com/kehuydietlatoi/token-sidekick-releases/releases/latest/download/Token-Sidekick-Setup.exe">⬇ Download for Windows</a>
+            <a class="btn ghost" href="#features">See what it does</a>
+          </div>
+          <p class="fine">Windows 10 &amp; 11 · no account needed · updates itself · nothing leaves your PC</p>
+        </div>
+        <div class="hero-art">
+          <img class="main" src="img/pack-cafe.png" alt="Token wearing a beret, round glasses and holding a latte" />
+        </div>
+      </div>
+    </header>
+
+    <div class="moods">
+      <div class="wrap">
+        <h2>Its mood is your usage</h2>
+        <div class="strip">
+          <figure>
+            <img src="img/mood-1.png" alt="Hungry and hyper Token" loading="lazy" />
+            <figcaption>Hungry &amp; hyper</figcaption>
+            <small>0–20%</small>
+          </figure>
+          <figure>
+            <img src="img/mood-2.png" alt="Happy Token" loading="lazy" />
+            <figcaption>Happy</figcaption>
+            <small>20–50%</small>
+          </figure>
+          <figure>
+            <img src="img/mood-3.png" alt="Full Token" loading="lazy" />
+            <figcaption>Full</figcaption>
+            <small>50–75%</small>
+          </figure>
+          <figure>
+            <img src="img/mood-4.png" alt="Sleepy Token playing a handheld" loading="lazy" />
+            <figcaption>Stuffed &amp; sleepy</figcaption>
+            <small>75–90%</small>
+          </figure>
+          <figure>
+            <img src="img/mood-5.png" alt="Token in a food coma" loading="lazy" />
+            <figcaption>Food coma</figcaption>
+            <small>90–100%</small>
+          </figure>
+        </div>
+        <div class="meter" aria-hidden="true"></div>
+        <div class="meter-labels"><span>fresh 5-hour window</span><span>limit reached</span></div>
+      </div>
+    </div>
+
+    <section id="features">
+      <div class="wrap">
+        <h2>Cute on the outside, useful underneath</h2>
+        <p class="sub">A glanceable usage meter, a tiny todo &amp; habit app, and a dress-up game in one.</p>
+        <div class="features">
+          <div class="feature">
+            <div class="pic"><img src="img/mood-4.png" alt="" loading="lazy" /></div>
+            <h3>🍔 Usage at a glance</h3>
+            <p>
+              Your 5-hour and weekly Claude limits, shown as a belly, eye bags and a night cap. It pops back when your
+              window refills.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="pic"><img src="img/working.png" alt="" loading="lazy" /></div>
+            <h3>⌨️ Works while you work</h3>
+            <p>
+              Token taps a tiny keyboard on every tool call, cheers when Claude finishes, and waves when it needs you.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="pic"><img src="img/cody.png" alt="" loading="lazy" /></div>
+            <h3>🤖 Friends for other agents</h3>
+            <p>
+              Use Codex CLI too? <b>Cody</b>, a mint cube with a <code>&gt;_</code> screen, tracks its limits right next
+              to Token.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="pic"><img src="img/panel-today.png" alt="" loading="lazy" /></div>
+            <h3>✅ Todos &amp; habits</h3>
+            <p>Drink water, stretch, focus timers, reading sessions. Finish things and Token gets a surprise drop.</p>
+          </div>
+          <div class="feature">
+            <div class="pic"><img src="img/pack-cosmic.png" alt="" loading="lazy" /></div>
+            <h3>🎁 Collect &amp; dress up</h3>
+            <p>Hats, glasses, toys and skins from common to legendary, with rare shinies and set bonuses.</p>
+          </div>
+          <div class="feature">
+            <div class="pic"><img src="img/custom.png" alt="" loading="lazy" /></div>
+            <h3>✏️ Make your own</h3>
+            <p>
+              Design items in the Workshop from shapes and stickers, or import your own SVG art, then share them with a
+              code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap split" style="text-align: left">
+        <img src="img/workshop.png" alt="The Token Workshop editor with a frog hat" loading="lazy" />
+        <div>
+          <h2>The Workshop</h2>
+          <p class="sub">Your Token, your style.</p>
+          <ul class="ticks">
+            <li>Stack 17 shapes and stickers into hats, glasses and held toys</li>
+            <li>Mix a skin: colours, gradients, sticker patterns, a shiny sheen</li>
+            <li>See it on Token in every mood before you save</li>
+            <li>Share with a code or a file. A community gallery is coming.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="install">
+      <div class="wrap">
+        <h2>Install in a minute</h2>
+        <p class="sub">Free during the beta, premium packs included.</p>
+        <ol class="steps">
+          <li><b>Download</b> <a href="https://github.com/kehuydietlatoi/token-sidekick-releases/releases/latest/download/Token-Sidekick-Setup.exe">Token-Sidekick-Setup.exe</a> and run it.</li>
+          <li>
+            <b>Windows may warn you.</b> The beta isn't code-signed yet (that costs money we'd rather spend on hats), so
+            SmartScreen shows a blue box. Click <b>More info</b>, then <b>Run anyway</b>.
+            <div class="smartscreen" aria-hidden="true">
+              <b>Windows protected your PC</b>Microsoft Defender SmartScreen prevented an unrecognized app from
+              starting…<br /><u>More info</u> → <span>Run anyway</span>
+            </div>
+          </li>
+          <li>
+            <b>Connect Claude Code:</b> right-click Token → <b>Settings</b> → <b>Connect</b>. Usage shows up after
+            Claude's next reply. It needs a Pro or Max plan, since only those report limits.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="privacy" class="band">
+      <div class="wrap">
+        <h2>Private by design</h2>
+        <p class="sub">Token runs on your PC and minds its own business.</p>
+        <div class="features" style="text-align: left">
+          <div class="feature">
+            <h3>🔒 No prompts, no code</h3>
+            <p>
+              It reads only the usage numbers Claude Code already puts in its status line, plus tool names from hooks.
+              Never your prompts, replies or files.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>📡 Nothing sent</h3>
+            <p>The beta has no account and no telemetry. Its only network call is checking GitHub for updates.</p>
+          </div>
+          <div class="feature">
+            <h3>↩️ Easy to undo</h3>
+            <p>Connecting backs up your Claude settings first, and Disconnect removes exactly what it added.</p>
+          </div>
+        </div>
+        <p class="fine" style="margin-top: 18px">
+          <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="wrap">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Is it free?</summary>
+          <p>
+            Yes. During the beta everything is free, including the premium packs. Claim them in the Shop and they're
+            yours to keep.
+          </p>
+        </details>
+        <details>
+          <summary>Mac or Linux?</summary>
+          <p>Windows only for now. Tell us if you want another platform, since that decides what comes next.</p>
+        </details>
+        <details>
+          <summary>Which plans and agents work?</summary>
+          <p>
+            Claude Code with a Pro or Max plan (API-key users don't get rate limits, so Token just hangs out). Codex CLI
+            is detected automatically. More agents are planned.
+          </p>
+        </details>
+        <details>
+          <summary>Is it safe to run something unsigned?</summary>
+          <p>
+            The warning only means the installer isn't signed with a paid certificate yet. The app runs in Electron's
+            sandbox, blocks remote pages and links, and updates only from our GitHub releases. Security issues can be
+            reported privately; see <a href="https://github.com/kehuydietlatoi/token-sidekick-releases/security/policy">our security policy</a>.
+          </p>
+        </details>
+        <details>
+          <summary>How do I uninstall?</summary>
+          <p>
+            Settings → Disconnect first (it restores your Claude settings), then remove it from Windows' Installed apps.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <h2>Help shape Token</h2>
+        <p class="sub">It's a beta, so your feedback decides what we build next.</p>
+        <div class="cta" style="justify-content: center">
+          <a class="btn primary" href="https://github.com/kehuydietlatoi/token-sidekick-releases/issues/new?template=bug.md">🐞 Report a bug</a>
+          <a class="btn ghost" href="https://github.com/kehuydietlatoi/token-sidekick-releases/issues/new?template=idea.md">💡 Suggest an idea</a>
+          <a class="btn ghost" href="https://github.com/kehuydietlatoi/token-sidekick-releases/discussions">💬 Community</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <span
+          >© 2026 Token Sidekick · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> ·
+          <a href="https://github.com/kehuydietlatoi/token-sidekick-releases/releases">Releases</a></span
+        >
+        <span
+          >An independent fan project, not affiliated with Anthropic or OpenAI. Claude is a trademark of
+          Anthropic.</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
