@@ -2,8 +2,9 @@
 
 **Token** is a little blob that lives on your Windows taskbar and eats tokens. Its belly is your **Claude Code**
 usage meter: hungry and hyper when you have plenty left, a snoring puddle when you've hit your limit. **Codex CLI**
-users get a companion critter, **Cody**. Finish todos, habits and focus sessions to collect hats, glasses and skins,
-or make your own in the **Workshop**.
+users get a companion critter, **Cody**. Finish todos, habits and focus sessions to collect hats, glasses, wings and
+skins, or make your own in the **Workshop**, or just **ask Claude to design them for you** through a built-in MCP
+server. Habit reminders come in Gentle, Loud and Ultra (Token hops across your screen).
 
 **[⬇ Download for Windows](https://github.com/kehuydietlatoi/token-sidekick-releases/releases/latest)** · [Website](https://kehuydietlatoi.github.io/token-sidekick-releases/) ·
 [Report a bug](https://github.com/kehuydietlatoi/token-sidekick-releases/issues/new?template=bug.md) · [Suggest an idea](https://github.com/kehuydietlatoi/token-sidekick-releases/issues/new?template=idea.md) ·
@@ -11,8 +12,8 @@ or make your own in the **Workshop**.
 
 <p align="center">
   <a href="https://kehuydietlatoi.github.io/token-sidekick-releases/#tour"><img src="https://kehuydietlatoi.github.io/token-sidekick-releases/img/demo-teaser.gif" width="720"
-    alt="Token's belly fills with Claude usage, it taps along while Claude works, todos drop items, and it dresses up" /></a>
-  <br /><sub><a href="https://kehuydietlatoi.github.io/token-sidekick-releases/#tour">Watch the full 1-minute tour</a></sub>
+    alt="Token's belly fills with Claude usage, it taps along while Claude works, Claude designs a pirate hat and wings for it, and it hops around when a habit is due" /></a>
+  <br /><sub><a href="https://kehuydietlatoi.github.io/token-sidekick-releases/#tour">Watch the full tour</a> · <a href="https://kehuydietlatoi.github.io/token-sidekick-releases/#claude">How Claude designs items</a></sub>
 </p>
 
 ## Installing
