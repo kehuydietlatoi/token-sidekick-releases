@@ -6,7 +6,7 @@
     <title>Token Sidekick: a desktop pet that eats your tokens</title>
     <meta
       name="description"
-      content="Token is a cute desktop pet for Windows whose belly is your Claude Code usage meter. Todos and habits drop items, Codex gets a critter too, and you can design your own look. Free beta."
+      content="Token is a cute desktop pet for Windows whose belly is your Claude Code usage meter. Ask Claude to design its outfits through a built-in MCP server, collect hats, wings and skins, and get habit reminders you can't ignore. Free beta."
     />
     <meta property="og:title" content="Token Sidekick: a desktop pet that eats your tokens" />
     <meta property="og:description" content="A desktop pet for Claude Code, Codex and more. Free beta for Windows." />
@@ -22,6 +22,7 @@
       <div class="wrap">
         <a class="logo" href="#"><img src="icon.png" alt="" />Token Sidekick</a>
         <div class="links">
+          <a href="#claude">Claude ✨</a>
           <a href="#features">Features</a>
           <a href="#install">Install</a>
           <a href="#privacy">Privacy</a>
@@ -35,10 +36,12 @@
       <div class="wrap">
         <div>
           <span class="badge">🫧 Free public beta · v0.2.0-beta.2</span>
+          <a class="badge new" href="#claude">✨ New: Claude designs Token's outfits</a>
           <h1>A desktop pet that <em>eats your tokens</em>.</h1>
           <p class="lead">
             Meet <b>Token</b>, a round little blob that lives on your taskbar. Its belly fills up as you use Claude
-            Code: hyper when you're fresh, snoring when you've hit your limit. It even taps along while Claude works.
+            Code: hyper when you're fresh, snoring when you've hit your limit. It taps along while Claude works, and now
+            Claude can design its hats, wings and skins for you.
           </p>
           <div class="cta">
             <a class="btn primary" href="https://github.com/kehuydietlatoi/token-sidekick-releases/releases/latest/download/Token-Sidekick-Setup.exe">⬇ Download for Windows</a>
@@ -90,7 +93,7 @@
     <section id="tour">
       <div class="wrap">
         <h2>See Token in action</h2>
-        <p class="sub">One minute, recorded straight from the app.</p>
+        <p class="sub">A minute and a half, recorded straight from the app.</p>
         <video
           class="tour"
           src="img/demo.mp4"
@@ -102,8 +105,82 @@
           loop
           playsinline
           preload="none"
-          aria-label="Tour of Token Sidekick: moods, working animations, item drops, dress-up, Cody and the Workshop"
+          aria-label="Tour of Token Sidekick: moods, working animations, item drops, habit reminders, dress-up with wings, Cody, the Workshop and Claude designing items through MCP"
         ></video>
+      </div>
+    </section>
+
+    <section id="claude" class="band claude">
+      <div class="wrap">
+        <span class="badge">🤖 Claude Workshop assistant · MCP</span>
+        <h2>Just ask Claude to dress Token</h2>
+        <p class="sub">
+          Token ships with a small MCP server. Turn it on and Claude Code can design, preview and save items straight
+          into your wardrobe.
+        </p>
+        <div class="claude-grid">
+          <video
+            class="tour autoplay"
+            src="img/demo-claude.mp4"
+            poster="img/demo-claude-poster.jpg"
+            width="1280"
+            height="720"
+            muted
+            loop
+            playsinline
+            controls
+            preload="none"
+            aria-label="Claude Code designs a pirate hat and wings for Token through the Workshop assistant"
+          ></video>
+          <ol class="steps">
+            <li>
+              <b>Switch it on.</b> Settings → <b>Claude Workshop assistant</b>. Token registers itself with
+              <code>claude mcp add</code> for you.
+            </li>
+            <li>
+              <b>Ask.</b> In Claude Code, say what you want:
+              <div class="prompts">
+                <code>design Token a pirate hat</code>
+                <code>make wings with little straps</code>
+                <code>a galaxy skin with a shiny sheen</code>
+              </div>
+            </li>
+            <li>
+              <b>Watch it work.</b> Claude reads the house style guide, previews the draft on Token in every mood, fixes
+              anything the safety check rejects, then saves and dresses Token.
+            </li>
+          </ol>
+        </div>
+        <div class="claude-shots">
+          <figure>
+            <img src="img/claude-preview.png" alt="Token wearing a draft pirate hat in every mood" loading="lazy" />
+            <figcaption>It previews every mood before saving</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="img/claude-made.png"
+              alt="Token wearing a pirate hat and wings that Claude designed"
+              loading="lazy"
+            />
+            <figcaption>Saved and worn, straight away</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="img/claude-mine.png"
+              alt="The Workshop's Mine tab with a robot badge and Revert button"
+              loading="lazy"
+            />
+            <figcaption>🤖 badge and one-click ↩ Revert</figcaption>
+          </figure>
+        </div>
+        <ul class="ticks trust">
+          <li><b>Off until you turn it on.</b> Nothing listens by default.</li>
+          <li><b>Local only.</b> It listens on your own PC, behind a private token.</li>
+          <li>
+            <b>Safe by construction.</b> Claude's art goes through the same sanitizer as yours, and it can't delete
+            anything.
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -146,6 +223,24 @@
             <p>Hats, glasses, toys and skins from common to legendary, with rare shinies and set bonuses.</p>
           </div>
           <div class="feature">
+            <div class="pic"><img src="img/back.png" alt="" loading="lazy" /></div>
+            <h3>🪽 Wings, capes &amp; backpacks</h3>
+            <p>A whole new back slot: gear that sits behind Token, with straps in front, and flutters or sways.</p>
+          </div>
+          <div class="feature">
+            <div class="pic"><img src="img/reminder-ultra.png" alt="" loading="lazy" /></div>
+            <h3>🔔 Reminders you can't ignore</h3>
+            <p>
+              Choose <b>Gentle</b>, <b>Loud</b> or <b>Ultra</b> per habit. Ultra makes Token hop across your screen
+              until you do it, without ever stealing focus.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="pic"><img src="img/claude-made.png" alt="" loading="lazy" /></div>
+            <h3>🤖 Claude designs for you</h3>
+            <p>Ask Claude Code for a hat, wings or a skin and it appears on Token. <a href="#claude">See how</a>.</p>
+          </div>
+          <div class="feature">
             <div class="pic"><img src="img/custom.png" alt="" loading="lazy" /></div>
             <h3>✏️ Make your own</h3>
             <p>
@@ -164,9 +259,11 @@
           <h2>The Workshop</h2>
           <p class="sub">Your Token, your style.</p>
           <ul class="ticks">
-            <li>Stack 17 shapes and stickers into hats, glasses and held toys</li>
+            <li>Stack shapes and stickers into hats, glasses, held toys and wings</li>
+            <li>Back items get an "In front of Token" toggle per layer, for straps and harnesses</li>
             <li>Mix a skin: colours, gradients, sticker patterns, a shiny sheen</li>
             <li>See it on Token in every mood before you save</li>
+            <li>Or <a href="#claude">ask Claude to draw it</a>, then fine-tune it by hand</li>
             <li>Share with a code or a file. A community gallery is coming.</li>
           </ul>
         </div>
@@ -199,7 +296,7 @@
       <div class="wrap">
         <h2>Private by design</h2>
         <p class="sub">Token runs on your PC and minds its own business.</p>
-        <div class="features" style="text-align: left">
+        <div class="features two" style="text-align: left">
           <div class="feature">
             <h3>🔒 No prompts, no code</h3>
             <p>
@@ -214,6 +311,13 @@
           <div class="feature">
             <h3>↩️ Easy to undo</h3>
             <p>Connecting backs up your Claude settings first, and Disconnect removes exactly what it added.</p>
+          </div>
+          <div class="feature">
+            <h3>🤖 Claude stays local</h3>
+            <p>
+              The Workshop assistant is off by default and only listens on your own PC. It registers through
+              <code>claude mcp add</code>, so the app never edits Claude's config files by hand.
+            </p>
           </div>
         </div>
         <p class="fine" style="margin-top: 18px">
@@ -230,6 +334,20 @@
           <p>
             Yes. During the beta everything is free, including the premium packs. Claim them in the Shop and they're
             yours to keep.
+          </p>
+        </details>
+        <details>
+          <summary>What does Claude need to design items for me?</summary>
+          <p>
+            Claude Code installed, and the <b>Claude Workshop assistant</b> switched on in Settings. Token registers its
+            local MCP server for you; if that fails, the same card shows a command to copy.
+          </p>
+        </details>
+        <details>
+          <summary>Can I stop Token hopping around?</summary>
+          <p>
+            Yes. Every habit has its own reminder level (Gentle, Loud or Ultra), and the 👀 Preview button in the panel
+            shows what each one does before you pick.
           </p>
         </details>
         <details>
@@ -285,12 +403,13 @@
       </div>
     </footer>
     <script>
-      // Play the tour muted while it's on screen, unless the visitor prefers reduced motion.
-      const tour = document.querySelector('video.tour')
-      if (tour && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        new IntersectionObserver(([e]) => (e.isIntersecting ? tour.play().catch(() => {}) : tour.pause()), {
-          threshold: 0.5
-        }).observe(tour)
+      // Play the videos muted while they're on screen, unless the visitor prefers reduced motion.
+      if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        for (const video of document.querySelectorAll('video.tour')) {
+          new IntersectionObserver(([e]) => (e.isIntersecting ? video.play().catch(() => {}) : video.pause()), {
+            threshold: 0.5
+          }).observe(video)
+        }
       }
     </script>
   </body>

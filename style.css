@@ -481,3 +481,93 @@ footer .wrap {
   font-size: 22px;
   margin-top: 28px;
 }
+
+/* ── Claude Workshop assistant (#claude) ── */
+.badge.new {
+  margin-left: 6px;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+.claude-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 28px;
+  align-items: center;
+  text-align: left;
+}
+.claude-grid video.tour {
+  max-width: none;
+}
+.claude-grid .steps {
+  margin: 0;
+}
+.prompts {
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+}
+.prompts code {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #2b2323;
+  color: #f4e9e2;
+  font-size: 14px;
+}
+.prompts code::before {
+  content: '> ';
+  color: #f2a47c;
+}
+.claude-shots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+.claude-shots figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.claude-shots img {
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  margin: 0 auto;
+  max-height: 220px;
+  width: auto;
+  object-fit: contain;
+}
+.claude-shots figcaption {
+  font-weight: 800;
+  font-size: 14px;
+}
+ul.ticks.trust {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 24px;
+  margin: 28px 0 0;
+  text-align: left;
+  font-size: 15px;
+  color: var(--muted);
+}
+.features.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 900px) {
+  .claude-grid,
+  ul.ticks.trust {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 580px) {
+  .claude-shots,
+  .features.two {
+    grid-template-columns: 1fr;
+  }
+}
